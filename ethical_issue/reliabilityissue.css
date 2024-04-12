@@ -1,0 +1,64 @@
+@keyframes slightlfiker {
+0% {background-color: black;}
+50% {background-color: #071e26}
+100% {background-color: black;}
+}
+
+.header {
+	background-color: black;
+	color: lightgrey;
+	padding: 10px;
+	border: solid;
+	border-width: 10px;
+	border-color: darkslategray;
+	animation-name: slightlfiker;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes flciker {
+0% {opacity: 100%}
+10% {opacity: 80%}
+20% {opacity: 60%}
+30% {opacity: 30%}
+40% {opacity: 10%}
+50% {opacity: 0%}
+60% {opacity: 20%}
+70% {opacity: 35%}
+80% {opacity: 60%}
+90% {opacity: 80%}
+100% {opacity: 100%}
+}
+
+.imige1u {
+	margin-top: 35px;
+	border: solid;
+	border-width: 10px;
+	border-color: darkslategray;
+	display: inline-grid;
+		/*below the comment is the animation	*/
+		animation-name: flciker;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+}
+
+.sideh {
+	opacity: 0%;
+	display: inline-flex;
+	color: red;
+	font-size: 30px;
+	transition: opacity 3s;
+}
+
+.sideh:hover {
+	opacity: 100%;
+}
+
+.main {
+	font-size: 30px;
+	border: solid;
+	border-width: 10px;
+	border-color: darkslategray;
+	color: lightgrey;
+	background-color: black;
+}
