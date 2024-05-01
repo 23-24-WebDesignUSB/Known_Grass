@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+
+	<title>QUIZ</title>
+</head>
+<body>
+	<div class="opener">
+<h1>When will you die? - THIS QUIZ WILL TELL YOU EVERYTHING ABOUT YOUR LIFE 100% ACCURATE BASED ON YOUR ANSWERS</h1>
+
+<br>
+<p>This quiz will tell you exactly when you will die if you answer honestly. Based on hours of painstaking reasearch and carefully crafted questions this quiz is the most credible 100% final and definitive source. The result you get from this test will always be 10% accurate if you are honest. Don't lie, don't make anything up just answer the questions.</p>
+
+<br>
+</div>
+<br>
+<div class="q1" id="quest1">
+<h2>How old are you?</h2>
+<label>Put your current age in years here:</label>
+<input type="number" name="age" id="start">
+<br>
+<img src="promtage.jpeg">
+<br>
+<input type="button" value="NEXT" onclick="next()">
+</div>
+<br>
+
+<div class="q2">
+	<h2>Do you sleep more than 5 hours a day?</h2>
+	<input id="yes" type="radio" name="pickone">
+	<label for="yes">yes</label>
+	<br>
+	<input id="no" type="radio" name="pickone">
+	<label for="no">no</label>
+	<br>
+	<img src="bed.jpeg">
+	<br>
+	<input type="button" value="NEXT" onclick="enext()">
+</div>
+
+<div class="q3">
+	<h2>Do you have any health issues?</h2>
+	<input id="yey" type="radio" name="pickon">
+	<label for="yey">yes</label>
+	<br>
+	<input id="noh" type="radio" name="pickon">
+	<label for="noh">no</label>
+	<br>
+	<input type="button" value="NEXT" onclick="next2()">
+
+</div>
+
+<div class="q4">
+	
+<h2>Ho wmdoctor</h2>
+	<input id="yey" type="radio" name="pickon">
+	<label for="yey">yes</label>
+	<br>
+	<input id="noh" type="radio" name="pickon">
+	<label for="noh">no</label>
+	<br>
+	<input type="button" value="NEXT" onclick="next2()">
+
+</div>
+
+<div class="endd">
+	
+	<h1 id="end1">YOU WILL DIE TOMMROW SORRY!</h1>
+
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+	
+
+
+	function next() {
+	var score = document.getElementById("start").value;
+	const collection1 = document.getElementsByClassName("q1");
+for (let i = 0; i < collection1.length; i++) {
+  collection1[i].style.display = "none";
+  }
+const collection2 = document.getElementsByClassName("q2");
+for (let i = 0; i < collection2.length; i++) {
+  collection2[i].style.display = "block";
+}
+}
+//the above code takes the number input and makes it a variable and then it causes the first question to go invisible and the second question to appear in its place
+</script>
+<script type="text/javascript">
+	
+	function enext() {
+	if(document.getElementById("no").checked) {
+		var score = score + 2;
+
+const collection2 = document.getElementsByClassName("q2");
+for (let i = 0; i < collection2.length; i++) {
+  collection2[i].style.display = "none";
+
+	const collection3 = document.getElementsByClassName("q3");
+	for (let j = 0; j < collection3.length; j++) {
+  collection3[j].style.display = "block";}
+}
+}
+ if(document.getElementById("yes").checked) {
+ 	const collection2 = document.getElementsByClassName("q2");
+	for (let i = 0; i < collection2.length; i++) {
+  collection2[i].style.display = "none";
+
+	const collection3 = document.getElementsByClassName("q3");
+	for (let j = 0; j < collection3.length; j++) {
+  collection3[j].style.display = "block";}
+}
+}
+}
+</script>
+
+	
+<script type="text/javascript">
+	
+
+
+next2() {
+	if (document.getElementById(yey).checked) {
+		var score = score + 2
+		const collection3 = document.getElementsByClassName("q3");
+for (let j = 0; j < collection3.length; j++) {
+  collection3[j].style.display = "none";
+
+  const collection4 = document.getElementsByClassName("q4");
+for (let j = 0; j < collection4.length; j++) {
+  collection4[j].style.display = "block";
+}
+}
+	if (document.getElementById(noh).checked) {
+	const collection3 = document.getElementsByClassName("q3");
+for (let j = 0; j < collection3.length; j++) {
+  collection3[j].style.display = "none";
+
+  const collection4 = document.getElementsByClassName("q4");
+for (let j = 0; j < collection4.length; j++) {
+  collection4[j].style.display = "block";
+}
+}
+	}
+	}
+}
+
+
+
+</script>	
+
+
+
+
+
+</html>

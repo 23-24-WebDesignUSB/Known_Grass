@@ -1,0 +1,52 @@
+.opener {
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	/*simple styling*/
+}
+
+.q1 {
+	display: block;
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	text-align: center;
+}
+
+.q2 {
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	text-align: center;
+	display: none;
+}
+
+.q3 {
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	text-align: center;
+	display: none;
+}
+
+.q4 {
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	text-align: center;
+	display: none;
+}
+
+.endd {
+	display: none;
+}
