@@ -23,11 +23,12 @@
 <input type="number" name="age" id="start">
 <br>
 <img src="promtage.jpeg">
+<p>From deepai (promt:age)</p>
 <br>
 <input type="button" value="NEXT" onclick="next()">
 </div>
 <br>
-
+<!--every question egts its own div to help simplify the javascirp-->
 <div class="q2">
 	<h2>Do you sleep more than 5 hours a day?</h2>
 	<input id="yes" type="radio" name="pickone">
@@ -37,6 +38,9 @@
 	<label for="no">no</label>
 	<br>
 	<img src="bed.jpeg">
+	<a href="https://en.ac-illust.com/clip-art/24189380/bed">
+		image from here
+	</a>
 	<br>
 	<input type="button" value="NEXT" onclick="enext()">
 </div>
@@ -55,22 +59,57 @@
 
 <div class="q4">
 	
-<h2>Ho wmdoctor</h2>
-	<input id="yey" type="radio" name="pickon">
-	<label for="yey">yes</label>
+<h2>Which of the following have you done the most?</h2>
+	<input id="injury" type="radio" name="pickonee">
+	<label for="injury">got a life threatening injury</label>
 	<br>
-	<input id="noh" type="radio" name="pickon">
-	<label for="noh">no</label>
+	<input id="substance" type="radio" name="pickonee">
+	<label for="substance">smoked or drank</label>
 	<br>
-	<input type="button" value="NEXT" onclick="next2()">
+	<input id="meat" type="radio" name="pickonee">
+	<label for="meat">eaten a lot of  red meat</label>
+	<br>
+	<input id="lie" type="radio" name="pickonee">
+	<label for="lie">lied on this quiz</label>
+	<br>
+	<input type="button" value="NEXT" onclick="nextq()">
 
 </div>
 
-<div class="endd">
+<div class="q5">
+	<h2>Do you feel stressed often?</h2>
+	
+	<input type="button" value="YES" onclick="yes()">
+	<br>
+	<input type="button" value="NO" onclick="noo()">
+</div>
+
+<div class="q6">
+	<h2>Do you have kids?</h2>
+	<input id="ansyes" type="radio" name="pickon">
+	<label for="ansyes">yes</label>
+	<br>
+	<input id="ansno" type="radio" name="pickon">
+	<label for="ansno">no</label>
+	<br>
+	<input type="button" value="END" onclick="ENDINGFUNCTION()">
+
+</div>
+
+
+<div class="badend">
 	
 	<h1 id="end1">YOU WILL DIE TOMMROW SORRY!</h1>
 
 </div>
+
+<div class="goodend">
+	
+	<h1>YOU HAVE 20 MORE YEARS!</h1>
+
+</div>
+
+
 
 
 </body>
@@ -122,22 +161,10 @@ for (let i = 0; i < collection2.length; i++) {
 
 	
 <script type="text/javascript">
-	
 
-
-next2() {
-	if (document.getElementById(yey).checked) {
+function next2() {
+	if (document.getElementById("yey").checked) {
 		var score = score + 2
-		const collection3 = document.getElementsByClassName("q3");
-for (let j = 0; j < collection3.length; j++) {
-  collection3[j].style.display = "none";
-
-  const collection4 = document.getElementsByClassName("q4");
-for (let j = 0; j < collection4.length; j++) {
-  collection4[j].style.display = "block";
-}
-}
-	if (document.getElementById(noh).checked) {
 	const collection3 = document.getElementsByClassName("q3");
 for (let j = 0; j < collection3.length; j++) {
   collection3[j].style.display = "none";
@@ -147,15 +174,127 @@ for (let j = 0; j < collection4.length; j++) {
   collection4[j].style.display = "block";
 }
 }
+}
+	if (document.getElementById("noh").checked) {
+	const collection3 = document.getElementsByClassName("q3");
+for (let j = 0; j < collection3.length; j++) {
+  collection3[j].style.display = "none";
+}
+  const collection4 = document.getElementsByClassName("q4");
+for (let j = 0; j < collection4.length; j++) {
+  collection4[j].style.display = "block";
+}
+}
+	}
+	
+</script>	
+
+<script type="text/javascript">
+
+function nextq() {
+/*if (document.getElementById("inury").checked) {
+		var score = score + 2
+	}
+	if (document.getElementById("substance").checked) {
+		var score = score + 2
+	}
+	if (document.getElementById("meat").checked) {
+		var score = score + 2
+	}
+	if (document.getElementById("lie").checked) {
+		var score = score + 2
+	}
+*/	
+	const collection4 = document.getElementsByClassName("q4");
+for (let j = 0; j < collection4.length; j++) {
+  collection4[j].style.display = "none";
+}
+  const collection5 = document.getElementsByClassName("q5");
+for (let j = 0; j < collection5.length; j++) {
+  collection5[j].style.display = "block";
 	}
 	}
+
+
+
+</script>
+
+<script type="text/javascript">
+	
+	function yes () {
+		var score = score + 1
+		const collection5 = document.getElementsByClassName("q5");
+for (let j = 0; j < collection5.length; j++) {
+  collection5[j].style.display = "none";
+}
+  const collection6 = document.getElementsByClassName("q6");
+for (let j = 0; j < collection6.length; j++) {
+  collection6[j].style.display = "block";
+	}
+	}
+	
+</script>
+
+<script type="text/javascript">
+		function noo() {
+var score = score + 1
+		const collection5 = document.getElementsByClassName("q5");
+for (let j = 0; j < collection5.length; j++) {
+  collection5[j].style.display = "none";
+}
+  const collection6 = document.getElementsByClassName("q6");
+for (let j = 0; j < collection6.length; j++) {
+  collection6[j].style.display = "block";
+	}
+	}
+</script>
+
+<script type="text/javascript">
+
+function ENDINGFUNCTION() {
+		if(document.getElementById("ansno").checked) {
+
+const collection6 = document.getElementsByClassName("q6");
+for (let i = 0; i < collection6.length; i++) {
+  collection6[i].style.display = "none";
+}
+if (score > 4) {
+	const end1 = document.getElementsByClassName("badend");
+	for (let i = 0; i < end1.length; i++) {
+  end1[i].style.opacity = 100;
+}
+}
+else {
+	const end2 = document.getElementsByClassName("goodend");
+	for (let i = 0; i < end2.length; i++) {
+  end2[i].style.opacity = 100;
+}
+}
+}
+ if(document.getElementById("ansyes").checked) {
+ 	var score = score + 2;
+ 	const collection6 = document.getElementsByClassName("q6");
+	for (let i = 0; i < collection6.length; i++) {
+  collection6[i].style.display = "none";
+	
+}
+if (score > 4) {
+	const end3 = document.getElementsByClassName("badend");
+	for (let i = 0; i < end3.length; i++) {
+  end3[i].style.opacity = 100;
+}
+}
+else {
+	const end4 = document.getElementsByClassName("goodend");
+	for (let i = 0; i < end4.length; i++) {
+  end4[i].style.opacity = 100;
+}
+}
+}
 }
 
 
-
-</script>	
-
-
+</script>
 
 
 

@@ -47,6 +47,44 @@
 	display: none;
 }
 
-.endd {
+.q5 {
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	text-align: center;
 	display: none;
+}
+
+.q6 {
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	text-align: center;
+	display: none;
+}
+/* some basic styling copy[asted fro everything to look the smae */
+.badend {
+	opacity: 0%;
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	text-align: center;
+	transition: opacity 3s;
+}
+
+.goodend {
+	opacity: 0%;
+	background: #DDA29F;
+	border: solid;
+	border-width: 6px;
+	border-color: #B63F3B;
+	font-size: 20px;
+	text-align: center;
+	transition: opacity 3s;
 }
