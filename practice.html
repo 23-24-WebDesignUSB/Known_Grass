@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="number" name="number" id="year">
+
+<button onclick="q1()">number one</button>
+
+	<input type="number" name="minutes" id="minutes">
+
+<button onclick="q2()">number two</button>
+
+<input type="number" name="height" id="height">
+
+	<input type="number" name="base" id="base">
+	
+<button onclick="q3()">number three</button>
+
+<br>
+
+<input type="number" name="num1" id="num1">
+
+	<input type="number" name="num2" id="num2">
+	
+<button onclick="q4()">number four</button>
+
+</body>
+
+<br>
+
+<input type="number" name="triangle" id="try1">
+
+<input type="number" name="triangle" id="try2">
+
+<input type="number" name="triangle" id="try3">
+
+	
+<button onclick="q5()">number five</button>
+
+</body>
+
+<script type="text/javascript">
+	
+function q1() {
+	var x = document.getElementById("year").value;
+
+// % = mod
+	if (x % 4 == 0) {
+		alert("blue tie");
+	}
+	if (x % 4 == 1) {
+		alert("yellow tie");
+	}
+	if (x % 4 == 2) {
+		alert("red tie");
+	}
+	if (x % 4 == 3) {
+		alert("green tie");
+	}
+}
+</script>
+
+<script type="text/javascript">
+	
+	function q2() {
+	var time = document.getElementById("minutes").value;
+	alert(parseInt(time/60) + " hours and " + time%60 + " minutes")
+}
+
+</script>
+
+
+<script type="text/javascript">
+	
+	function q3() {
+	var h = document.getElementById("height").value;
+	var b = document.getElementById("base").value;
+	alert(h*b/2);
+}
+
+</script>
+
+<script type="text/javascript">
+	function q4() {
+		var work = 0	
+		if (document.getElementById("num1").value < 10) {
+		var work = work + 1;
+	
+	}
+		if (document.getElementById("num2").value < 10) {
+		var work = work + 1;
+	}			
+		if (document.getElementById("num1").valueAsNumber + document.getElementById("num2").valueAsNumber > 100) {
+		var work = work + 1;
+	}
+if (work > 0) {
+	alert("false");
+}
+else {
+	alert("true");
+}
+}
+									
+
+
+</script>
+
+<script type="text/javascript">
+	function q5() {
+		var triangle1 = document.getElementById("try1").valueAsNumber;
+		var triangle2 = document.getElementById("try2").valueAsNumber;
+		var triangle3 = document.getElementById("try3").valueAsNumber;
+
+		if (triangle1 + triangle2 > triangle3) {
+			if (triangle2 + triangle3 > triangle1) {
+				if (triangle1 + triangle3 > triangle2) {
+				alert("TRAINGLE");
+		}
+		}	
+		}
+
+	}
+	//i worked on this for 1 hour+ so i stopped at number 5
+</script>
+
+</html>
