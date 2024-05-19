@@ -1,0 +1,14 @@
+.everything {
+	color: white;
+	background: red;
+	outline-color: black;
+	border-width: 16px;
+	border-color: black;
+}
+
+a {
+	size: 2;
+	color: white;
+}
+
+/* making everything red because it is teh most appatizing color according to Minh 

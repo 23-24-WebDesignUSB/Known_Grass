@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cookbookk.css">
+	<title></title>
+</head>
+<body>
+<div class="everything">
+	
+<h1>COOKBOOK</h1>
+<input type="text" id="ingrdiant">
+<label for="ingrdiant">LIST YOUR INGREDIENTS HERE</label>
+<br>
+<input type="number" name="" id="userating">
+<label for="userating">RATE YOUR RECIPIE HERE</label>
+<br>
+<input type="text" id="recipienam">
+<label for="recipienam">NAME OF YOUR RECIPIE</label>
+<br>
+<button onclick="add()">add</button>
+<br>
+<br>
+<br>
+<br>
+<h1>Input Recipie:</h1> <h1 id="TITLEOUTPUT"></h1>
+<br>
+<h1>Rating:</h1> <h1 id="RATINGOUTPUT"></h1>
+<br>
+<h1>Ingrediants:</h1> <h1 id="INGREIDnatSOUTOUT"></h1>
+<br>
+<h1>Recpie 1: cookie</h1>
+<br>
+<h1>Rating: 11</h1>
+<br>
+<h1>Ingridients: flour, leavener, salt, sugar, butter, egg, and vanilla</h1>
+<a href="https://sallysbakingaddiction.com/chewy-chocolate-chip-cookies/">SOURCE</a>
+<br>
+<img src ="cookie.jpeg" width="600">
+<a href="https://www.cookieclicker.com">IMAGE SOURCE</a>
+
+</div>
+</body>
+<script type="text/javascript">
+	
+	const cookbook = {
+		addition: function() {
+		document.getElementById("TITLEOUTPUT").innerHTML = document.getElementById("recipienam").value;
+		document.getElementById("INGREIDnatSOUTOUT").innerHTML = document.getElementById("ingrdiant").value;
+		let x = document.getElementById("userating").value.toString();
+		document.getElementById("RATINGOUTPUT").innerHTML = x;
+//object with function
+	}
+}
+	function add() {
+		cookbook.addition();
+	}
+
+	
+
+
+	
+
+</script>
+</html>
