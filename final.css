@@ -1,0 +1,41 @@
+body {
+	margin: 0px;
+	background: #5BCEFA;
+}
+.header {
+	font-size: 150%;
+	text-align: center;
+	border: solid white 6px;
+}
+.notheader {
+	display: flex;
+}
+.sidebar {
+	width: 15%;
+	height: 100%;
+	position: sticky;
+	top: 0;
+	padding: 15px;
+	display: inline-block;
+}
+.mainsection {
+	display: inline-block;
+	width: 85%;
+	padding: 20px;
+	border: solid 6px white;
+	border-top-width: 0px;
+	background: #F5A9B8;
+}
+
+.paragraph {
+display: inline-block;
+margin-right: 10%;
+margin-left: 10%;
+width: 30%;
+}
+
+.embed {
+display: inline-block;
+margin-left: 10%;
+width: 30%;
+}
